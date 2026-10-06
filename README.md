@@ -6,7 +6,7 @@
 
 ## git 명령어 사용하기
 1. 로컬 컴퓨터의 working 디렉토리를 만들 위치로 cmd 경로 옮기기 ( 예 : d:\> )
-2. d:\...\> git clone https://github.com/huduby777/2026_study.git  
+2. d:\\...\\> git clone https://github.com/huduby777/2026_study.git  
       ***<b>d:\2026_study\huduby\  </b>***   
       ***<b>d:\2026_study\isee\  </b>*** 
        기존에 원격지 github 에 있던 파일을 로컬로 다운로드 완료 ( clone 함 )
