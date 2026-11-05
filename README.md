@@ -12,7 +12,7 @@
        기존에 원격지 github 에 있던 파일을 로컬로 다운로드 완료 ( clone 함 )
 3. \2026_study\huduby\프로젝트명> working 디렉토리 작업  
 4.  소스 작업 후
-   \2026_study> **git pull origin main**       # 다른 사람이 작업한 내역 모두 가져와서 로컬=원격 맞추기
+   \2026_study> **git pull origin main**       # 다른 사람이 작업한 내역 모두 가져와서 로컬=원격 맞추기  
     git pull 이 진행이 안 되는 경우 : **git pull origin main --allow-unrelated-histories --no-rebase**
 
 
