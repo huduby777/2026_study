@@ -4,6 +4,8 @@ import streamlit as st
 # 도시코드 읽어오기
 # https://apis.data.go.kr/1613000/ArvlInfoInqireService/getCtyCodeList?serviceKey=...&_type=json
 
+
+
 # 1. API 요청 주소
 url = "https://apis.data.go.kr/1613000/ArvlInfoInqireService/getSttnAcctoArvlPrearngeInfoList"
 

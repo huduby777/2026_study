@@ -27,7 +27,7 @@ if 'font_mode' not in st.session_state:
 @st.cache_resource # 디버깅할 동안만
 def connect_arduino():
     connection = serial.Serial(
-        port="COM3",
+        port="COM7",
         baudrate=9600,
         timeout=1,
         write_timeout=1
@@ -142,7 +142,7 @@ def bus_list():
                 item = [item] # 시리즈 -> [] 해서 dataframe형태로 바꿀 수 있도록
             
             df = pd.DataFrame(item)
-            
+            st.dataframe(df)
         if df.empty:
             st.info("버스 정보가 없습니다.")
         else:
