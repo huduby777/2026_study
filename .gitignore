@@ -1,8 +1,4 @@
 **/.streamlit/secrets.toml
-<<<<<<< HEAD
-**/.vscode/
-=======
 **/.vscode/
 **/test.txt
 **/secret.h
->>>>>>> feb4749f9fe511f8370751c3d1b19b1052086d5c
