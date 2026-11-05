@@ -1,7 +1,7 @@
 // https://www.hivemq.com/demos/websocket-client/
 #include <WiFiS3.h>
 #include <ArduinoMqttClient.h>
-#include <secret.h>
+#include "secret.h"
 
 char ssid[] = SSID;
 char pwd[] = PWD;
@@ -27,6 +27,7 @@ void setup() {
     Serial.println(ssid);
 
     status = WiFi.begin(ssid,pwd);
+    Serial.println(status);
     delay(50);
   }
 
@@ -67,13 +68,14 @@ void loop() {
   for (int i = 0; i < 4; i++) {
     bool currentButtonState = digitalRead(btnPins[i]);
     if (!currentButtonState && previousButtonStates[i]) {
+      // Serial.println(currentButtonState);
       sendButtonMessage(i + 1);
       Serial.print("Push the button : ");
       Serial.println(i+1);
     }
     previousButtonStates[i] = currentButtonState; 
   }
-  delay(500);
+  delay(1500);
 }
 
 void onMqttMessage(int messageSize) {
