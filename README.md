@@ -19,6 +19,7 @@
    \2026_study> **git add .**                  # 작업한 모든 소스 git 저장소에 등록  
    \2026_study> **git commit -m "커밋메세지"**  # 등록된 소스를 저장소에 저장  
    \2026_study> **git push origin main**       # git 저장소에 저장된 소스 내역을 github 원격지에 push  
+   
 6. git push 전에 확인  
    \2026_study> **git branch**                 # branch 명에 *main 이 있어야 함.  
    \2026_study> **git branch -M main**         # *master 이나 기타 다른 branch라면 main으로 바꾸어줘야 함.  
